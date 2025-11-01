@@ -1,0 +1,204 @@
+:root {
+  --navy: #374375;
+  --cloud: #FFFCF5;
+  --periwinkle: #BABDE2;
+  --maroon: #895159;
+  --peach: #DFAEA1;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--cloud);
+  color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ----------- PAGE CENTRÉE ----------- */
+.page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* ----------- CARTE CENTRALE ----------- */
+.card {
+  background-color: var(--periwinkle);
+  color: var(--navy);
+  text-align: center;
+  padding: 60px 80px;
+  border-radius: 16px;
+  border: 2px solid var(--maroon);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* ----------- BOUTON ----------- */
+.btn {
+  display: inline-block;
+  background-color: var(--maroon);
+  color: var(--cloud);
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background-color: var(--peach);
+  color: var(--navy);
+  transform: scale(1.05);
+}
+
+/* ----------- PIED DE PAGE ----------- */
+.footer {
+  background-color: var(--cloud);
+  color: var(--navy);
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.7rem;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.footer .texte {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.footer strong {
+  color: var(--maroon);
+  font-weight: 600;
+}
