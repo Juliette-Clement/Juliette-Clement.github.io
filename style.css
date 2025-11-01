@@ -369,3 +369,120 @@ h2 {
   color: var(--maroon);
   font-weight: 600;
 }
+
+
+/* ===========================
+   📱 VERSION MOBILE (≤ 768px)
+   =========================== */
+@media (max-width: 768px) {
+
+  /* ----- Mise en page générale ----- */
+  body {
+    padding: 10px;
+  }
+
+  .cv-container {
+    grid-template-columns: 1fr; /* colonnes empilées */
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .col {
+    padding: 20px;
+  }
+
+  /* ----- Header ----- */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+
+  .header-left {
+    max-width: 100%;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-right a {
+    font-size: 0.9rem;
+  }
+
+  /* ----- Titres ----- */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+
+  /* ----- Grilles de contenu ----- */
+  .gridformation, 
+  .gridexp {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .formation, .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .annee {
+    margin-bottom: 5px;
+  }
+
+  /* ----- Compétences circulaires (logiciels) ----- */
+  .skills-circles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes bien alignées */
+    gap: 25px;
+    justify-items: center; /* centre horizontalement */
+    align-items: start; /* aligne en haut */
+    margin-bottom: 30px;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle::before {
+    inset: 8px;
+  }
+
+  .circle span {
+    font-size: 1rem;
+  }
+
+  .skill .texte {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* ----- Langues ----- */
+  .gridlangues {
+    gap: 10px;
+  }
+
+  /* ----- Footer ----- */
+  .footer {
+    font-size: 0.8rem;
+    padding: 15px 5px;
+    text-align: center;
+  }
+}
+
+
