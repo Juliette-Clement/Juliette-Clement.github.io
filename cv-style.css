@@ -1,0 +1,488 @@
+:root {
+  --navy: #374375;
+  --cloud: #FFFCF5;
+  --periwinkle: #BABDE2;
+  --maroon: #895159;
+  --peach: #DFAEA1;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+/* ----------- BASE GÉNÉRALE ----------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cloud);
+  color: var(--navy);
+}
+
+/* ----------- EN-TÊTE ----------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navy);
+  color: var(--cloud);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.header:hover {
+  background-color: var(--periwinkle);
+  color: var(--navy);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.header-left {
+    max-width: 60%;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    margin: 0;
+}
+
+.header .intro {
+    font-style: italic;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.header-right a {
+    color: var(--cloud);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.header-right a:hover {
+    color: var(--maroon);
+}
+
+.header-right i {
+    margin-right: 8px;
+}
+
+
+/* ----------- CONTAINER PRINCIPAL ----------- */
+
+
+.page-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.col {
+    background-color: var(--cloud);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid var(--periwinkle);
+}
+
+/* ----------- TITRES ----------- */
+h2 {
+    color: var(--navy);
+    border-left: 5px solid var(--maroon);
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.details h3 {
+  color: var(--navy);
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* ----------- EXPÉRIENCE PROFESSIONNELLE ----------- */
+.gridformation, .gridexp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-bottom: 30px;
+}
+
+.experience, .formation {
+    display: grid;
+    grid-template-columns: 130px 1fr; 
+    align-items: start;
+    gap: 15px;
+}
+
+.annee {
+    font-weight: 600;
+    color: var(--maroon);
+    margin-top: 5px;
+}
+
+
+.details .texte {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--navy);
+}
+
+/* ----------- CERCLES DE COMPÉTENCES ----------- */
+.skills-circles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skill .texte {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* ----------- CERCLES DE COMPÉTENCES ----------- */
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--maroon) calc(var(--percent) * 1%),
+    var(--periwinkle) calc(var(--percent) * 1%)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --percent: 0;
+  transition: background 1s ease;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  background-color: var(--cloud);
+  border-radius: 50%;
+}
+.circle span {
+  position: relative;
+  z-index: 2;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+
+.circle[data-value="20"] { --percent: 20; }
+.circle[data-value="40"] { --percent: 40; }
+.circle[data-value="60"] { --percent: 60; }
+.circle[data-value="80"] { --percent: 80; }
+.circle[data-value="100"] { --percent: 100; }
+
+
+/* ----------- LANGUES ----------- */
+.gridlangues {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.langues .texte {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: var(--periwinkle);
+  border-radius: 8px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--maroon), var(--peach));
+  border-radius: 8px;
+}
+
+/* ----------- COMPÉTENCES ----------- */
+.competences {
+    list-style: none;
+    padding: 0;
+}
+
+.competences li {
+  background-color: var(--periwinkle);
+  border-left: 4px solid var(--maroon);
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+/* ----------- PIED DE PAGE ----------- */
+.footer {
+  background-color: var(--cloud);
+  color: var(--navy);
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.7rem;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.footer .texte {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.footer strong {
+  color: var(--maroon);
+  font-weight: 600;
+}
+
+
+/* ===========================
+   📱 VERSION MOBILE 
+   =========================== */
+@media (max-width: 968px) {
+
+  /* ----- Mise en page générale ----- */
+  body {
+    padding: 10px;
+  }
+
+  .cv-container {
+    grid-template-columns: 1fr; /* colonnes empilées */
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .col {
+    padding: 20px;
+  }
+
+  /* ----- Header ----- */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+
+  .header-left {
+    max-width: 100%;
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-right a {
+    font-size: 0.9rem;
+  }
+
+  /* ----- Titres ----- */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 25px;
+  }
+
+  /* ----- Grilles de contenu ----- */
+  .gridformation, 
+  .gridexp {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .formation, .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .annee {
+    margin-bottom: 5px;
+  }
+
+  /* ----- Compétences circulaires (logiciels) ----- */
+  .skills-circles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes bien alignées */
+    gap: 25px;
+    justify-items: center; /* centre horizontalement */
+    align-items: start; /* aligne en haut */
+    margin-bottom: 30px;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle::before {
+    inset: 8px;
+  }
+
+  .circle span {
+    font-size: 1rem;
+  }
+
+  .skill .texte {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* ----- Langues ----- */
+  .gridlangues {
+    gap: 10px;
+  }
+
+  /* ----- Footer ----- */
+  .footer {
+    font-size: 0.8rem;
+    padding: 15px 5px;
+    text-align: center;
+  }
+}
+
+
