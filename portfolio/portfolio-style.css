@@ -140,12 +140,12 @@ body {
   color: var(--cloud);
   padding: 40px;
   border-radius: 12px;
-  margin: 30px;
 }
 
 @media (min-width: 1024px){
   .header{
     grid-template-columns: auto auto;
+    margin: 30px;
   }
 }
 
