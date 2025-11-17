@@ -282,7 +282,7 @@ body {
     color: var(--navy);
 }
 
-.image {
+.imageaccueil {
     display: grid;
     width: 100%;
     aspect-ratio: 4/3;
