@@ -41,7 +41,7 @@ h1{
     font-family: "Playfair Display", sans-serif;
     font-weight: 500;
     color: var(--maroon);
-    justify-self: center;
+    text-align: center;
     font-size: 2rem;
 }
 
